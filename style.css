@@ -1,0 +1,42 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.allButtons{
+    transition: all 0.4s ease 0s;
+}
+
+.allButtons:focus {
+    outline:none;
+}
+
+.allButtons:hover{
+    color:white;
+    transition: all 0.4s ease 0s;
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    margin:2rem 0;
+    
+}
+
+#grid { 
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    height:1rem;
+    text-align: center;
+    margin: 5rem auto auto auto;
+}
+
+
+button:disabled{
+    color: white !important;
+}

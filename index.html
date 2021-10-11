@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container m-auto h-screen w-screen text-center flex justify-center flex-col">
+        <h1 class="xl:text-9xl md:text-7xl sm:text-6xl text-4xl px-8  mt-32 mb-24" style="color:#17D4FE">Stopwatch App</h1>
+        
+        <div class="innerContainer flex justify-evenly flex-col items-center xl:text-5xl md:text-4xl text-3xl">
+            
+            <h2 id="time" class="xl:text-9xl md:text-8xl sm:text-7xl text-6xl text-white mb-8 text-center" style="font-family: 'VT323', monospace;">00:00:00.0</h2>
+            
+            
+            <div class="sm:grid sm:gap-14 sm:grid-cols-3 flex flex-col justify-between h-32 sm:h-auto">
+                <div>
+                    <button class="z-0 allButtons text-green-500 xl:w-72 md:w-48 sm:w-32 text-center" id="startButton" type="button">START</button>
+                    <button class="hidden z-10 allButtons text-red-500 xl:w-72 md:w-48 sm:w-32 text-center" id="pauseButton" type="button">PAUSE</button>
+                    <button class="hidden z-20 allButtons text-red-500 xl:w-72 md:w-48 sm:w-32 text-center" id="continueButton" type="button">CONTINUE</button>
+                </div>
+                <button class="allButtons text-yellow-500 xl:w-72 md:w-48 sm:w-32 text-center" id="splitButton" type="button">SPLIT</button>
+                
+                <button class="allButtons text-purple-500 xl:w-72 md:w-48 sm:w-32 text-center" id="resetButton" type="button">RESET</button>
+            </div>
+        </div>
+        <hr class="style-two">
+        <div id="grid"></div>
+    </div>
+    <script src="stopwatchApp.js"></script>
+</body>
+</html>
